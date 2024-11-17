@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+<!-- Previous head section remains the same -->
 <head>
     <title>Happy Birthday, My Love! 💝</title>
+    <!-- [Previous CSS styles remain exactly the same] -->
     <style>
+        /* All previous styles remain exactly the same */
         body {
             margin: 0;
             padding: 0;
@@ -56,6 +59,17 @@
             backdrop-filter: blur(5px);
         }
 
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame:hover img {
+            transform: scale(1.05);
+        }
+
         .photo-frame:before {
             content: '';
             position: absolute;
@@ -70,19 +84,7 @@
                 transparent
             );
             animation: shine 3s infinite;
-        }
-
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
+            z-index: 1;
         }
 
         .message {
@@ -97,6 +99,13 @@
             backdrop-filter: blur(5px);
             box-shadow: 0 0 20px rgba(255,255,255,0.2);
             animation: fadeIn 2s ease-out;
+        }
+
+        .hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
         }
 
         .heart {
@@ -171,13 +180,6 @@
             color: #fff;
             text-shadow: 0 0 5px rgba(255,255,255,0.5);
         }
-
-        .hearts {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
     </style>
 </head>
 <body>
@@ -186,15 +188,12 @@
         <h1 class="title">Happy Birthday, My Love! 💝</h1>
         
         <div class="photo-frame">
-            <div class="photo-placeholder">
-                Add your wife's photo here<br>
-                (Replace this div with an img tag)<br>
-                Recommended size: 300x400px
-            </div>
+            <img src="https://raw.githubusercontent.com/Ali83128/brithday/main/i.jpg" alt="My Beautiful Wife">
         </div>
 
         <div class="message">
             <p>To my beautiful wife,</p>
+                    
             <p>Mere Jan ki AJ birthday ha bht bht bht Happy birthday mere jan ko Miyaan jee taraf sa  ap mera pass ni otherwise ma gifts deta abi ma itna kar skta apka lia apka name ya website kar raha hu Mere jaan mera bacha mere biwi mere pari si bete AYat ki mama bht bht bht Happy Birthday APKO I love you sooo much.</p>
             <p>Apna Kabi mera sat ni chora bht galian tohmat sab bardash karka mera qadmo m bethy rahi ya hoti ha Biwi Mere Iqra AIK brand ha aur ya name Hamesha Abad Rahe ga  IQRA ALI  <3💝 I LOVE YOU SOOO MUCH.</p>
             <p class="signature">Forever Yours,<br>Your Loving Husband</p>
