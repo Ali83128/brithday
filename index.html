@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<!-- Previous head section remains the same -->
+<head>
+    <title>Happy Birthday, My Love! 💝</title>
+    <!-- [Previous CSS styles remain exactly the same] -->
+    <style>
+        /* All previous styles remain exactly the same */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(
+                45deg,
+                #ff69b4,
+                #da70d6,
+                #8a2be2,
+                #da70d6,
+                #ff69b4
+            );
+            background-size: 400% 400%;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+            background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.3));
+        }
+
+        .title {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .photo-frame {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 20px 0;
+            border: 10px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255,255,255,0.3);
+            animation: float 6s ease-in-out infinite;
+            backdrop-filter: blur(5px);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-frame:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.3),
+                transparent
+            );
+            animation: shine 3s infinite;
+            z-index: 1;
+        }
+
+        .message {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.2em;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            transform: rotate(45deg);
+            animation: heartFloat 4s ease-in infinite;
+            opacity: 0;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        .heart:before {
+            left: -10px;
+        }
+
+        .heart:after {
+            top: -10px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 200%; }
+        }
+
+        @keyframes heartFloat {
+            0% { 
+                transform: rotate(45deg) translateY(0);
+                opacity: 0;
+            }
+            50% { opacity: 0.8; }
+            100% { 
+                transform: rotate(45deg) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff69b4; }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    <div class="content">
+        <h1 class="title">Happy Birthday, My Love! 💝</h1>
+        
+        <div class="photo-frame">
+            <img src="https://raw.githubusercontent.com/Ali83128/brithday/main/i.jpg" alt="My Beautiful Wife">
+        </div>
+
+        <div class="message">
+            <p>To my beautiful wife,</p>
+                    
+            <p>Mere Jan ki AJ birthday ha bht bht bht Happy birthday mere jan ko Miyaan jee taraf sa  ap mera pass ni otherwise ma gifts deta abi ma itna kar skta apka lia apka name ya website kar raha hu Mere jaan mera bacha mere biwi mere pari si bete AYat ki mama bht bht bht Happy Birthday APKO I love you sooo much.</p>
+            <p>Apna Kabi mera sat ni chora bht galian tohmat sab bardash karka mera qadmo m bethy rahi ya hoti ha Biwi Mere Iqra AIK brand ha aur ya name Hamesha Abad Rahe ga  IQRA ALI  <3💝 I LOVE YOU SOOO MUCH.</p>
+            <p class="signature">Forever Yours,<br>Your Loving Husband</p>
+        </div>
+    </div>
+
+    <script>
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                heartsContainer.appendChild(heart);
+                setTimeout(() => heart.remove(), 4000);
+            }, 300);
+        }
+
+        window.onload = createHearts;
+    </script>
+</body>
+</html>
